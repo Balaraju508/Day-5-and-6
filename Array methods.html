@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Array methods
+        </title>
+    </head>
+    <body>
+        <script>
+            const arr=[56,38,-272,464,2928,1473];
+            const arr1=["hi","hello","enjoy","special"];
+            arr.push(26);
+            document.write("Array elements are after push operation: "+arr+"<br> <br>");
+
+
+            arr.pop();
+            document.write("Array elements are after pop operation: "+arr+"<br><br>");
+            
+            
+            arr.unshift(3287);
+            document.write("Array elements are after unshift operation: "+arr+"<br> <br>");
+            
+            
+            arr.shift();
+            document.write("Array elements are after shift operation: "+arr+"<br> <br>");
+            
+            
+            arr.sort(swap);
+            function swap(a,b){
+                return a-b;
+            }
+            document.write("Array elements are after sort operation: "+arr+"<br> <br>");
+            
+            
+            let b=arr.map(multiply);
+            function multiply(value, index, arr){
+                return value*3;
+            }
+            document.write("Array elements are after map operation: "+b+"<br> <br>");
+            
+            let filtered=arr.filter(function (val){
+                return val >= 0;
+            });
+            document.write("Array elements are after filter operation: "+filtered+"<br> <br>");
+            
+            let sum=arr.reduce((a,c)=>{
+                return a+c;
+            },0);
+            document.write("Array elements are after reduce operation: "+sum+"<br> <br>");
+            
+            
+            document.write("Array elements are after forEach operation: "+"<br> <br>");
+            arr.forEach((value)=>{
+                document.write(value+"<br> <br>");
+            });
+        </script>
+    </body>
+</html>

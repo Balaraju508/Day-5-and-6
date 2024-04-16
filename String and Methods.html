@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>String Methods</title>
+    </head>
+    <body>
+        <h4> String Methods: </h4>
+        <script>
+            let a="this is string example";
+            let b= a.slice(0,7);
+            document.write("b value after slice operation: "+b+"<br><br>");
+
+            let c=a.substring(0,10);
+            document.write("c value after substring operation: "+c+"<br><br>");
+
+
+            let d=a.substr(5,10);
+            document.write("d value after substring operation: "+d+"<br><br>");
+
+
+            let e=a.replace("string", "strong");
+            document.write("e value after replace operation: "+e+"<br><br>");
+
+
+            let f=a.replaceAll("is","it");
+            document.write("f value after replaceall operation:"+f+"<br><br>");
+
+
+            let g=a.toUpperCase();
+            document.write("g value after touppercase operation: "+g+"<br><br>");
+
+
+            let h=a.toLowerCase();
+            document.write("h value after tolowercase operation: "+h+"<br><br>");
+
+
+            let i="this is javascript string example";
+            let j=a.concat(i);
+            document.write("j value after concat operation:  "+j+"<br><br>");
+
+
+            let k=a.charAt(5);
+            document.write("k value after charAt operation: "+k+"<br><br>");
+
+
+            let l=a.charCodeAt(5);
+            document.write("l value after charCodeAt operation: "+l+"<br><br>");
+
+
+            let m=a.split(" ");
+            document.write("m value after split operation: "+m+"<br><br>");
+        </script>
+    </body>
+</html>

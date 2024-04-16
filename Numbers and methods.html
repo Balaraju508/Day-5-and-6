@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Numbers and methods
+        </title>
+    </head>
+    <body>
+        <h3>Number and methods</h3>
+        <script>
+            let a=10;
+            document.write("after isFinite operation: "+Number.isFinite(a)+"<br><br>");
+
+            let b;
+            b=10/0;
+            document.write("after isInteger operation: "+Number.isInteger(30/4)+"<br><br>");
+
+            document.write("after parseint operation: "+Number.parseInt("34")+"<br><br>");
+            
+            document.write("after parseFloat operation: "+Number.parseFloat("45.98")+"<br><br>");
+            
+            let c=15;
+            let d=c.toString(8);
+            document.write("after toString operation: "+d+"<br><br>");
+
+            let e=43;
+            let f=e.valueOf();
+            document.write("after valueof operation: "+f+"<br><br>");
+
+            let g=5.49020;
+            let h=g.toFixed();
+            document.write("after toFixed operation: "+h+"<br><br>");
+
+            
+        </script>
+    </body>         
+</html>
